@@ -1,7 +1,8 @@
 package Employee;
-
+import java.util.Iterator;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
+import java.util.Map;
 
 public class MapDemo {
 public static void main(String args[])
@@ -16,6 +17,9 @@ public static void main(String args[])
 	hs.put(128, "manu");
 	hs.put(145,"swetha" );
 	System.out.println(hs);
-	
+Set<Map.Entry<Integer,String>> s=hs.entrySet();
+   for(Map.Entry<Integer,String x:s)
+{
+System.out.println(x.getKey()+" "+x.getValue());	
 }
 }
